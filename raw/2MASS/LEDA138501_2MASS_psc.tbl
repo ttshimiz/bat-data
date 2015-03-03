@@ -1,0 +1,79 @@
+\                                                                               
+\fixlen = T
+\RowsRetrieved =                 4
+\ORIGIN  = 'IPAC Infrared Science Archive (IRSA), Caltech/JPL'
+\DATETIME= '2015-01-19 23:08:14'
+\DataTag = 'ADS/IRSA.Gator#2015/0119/230814_20091'
+\DATABASE= '2MASS All-Sky Point Source Catalog (PSC) (fp_psc)'
+\EQUINOX = 'J2000'
+\SKYAREA = 'within 30 arcsec of  ra=32.39292 dec=+52.44250 Eq J2000 '
+\StatusFile = '/workspace/TMP_Q6R7px_10946/Gator/irsa/20091/log.20091.html'
+\SQL     = 'WHERE (no constraints) 
+\SQL     = 'SELECT (27 column names follow in next row.)'
+\ 
+\ ra (deg) 
+\ ___ right ascension (J2000 decimal deg)
+\ dec (deg) 
+\ ___ declination (J2000 decimal deg)
+\ err_maj (arcsec) 
+\ ___ Semi-major axis length of the one sigma position uncertainty ellipse
+\ err_min (arcsec) 
+\ ___ Semi-minor axis length of the one sigma position uncertainty ellipse
+\ err_ang (deg) 
+\ ___ angle of error ellipse major axis (E of N)
+\ designation 
+\ ___ source designation formed from sexigesimal coordinates
+\ j_m (mag) 
+\ ___ J band selected "default" magnitude
+\ j_cmsig (mag) 
+\ ___ corrected J band photometric uncertainty
+\ j_msigcom (mag) 
+\ ___ combined (total) J band photometric uncertainty
+\ j_snr 
+\ ___ J band "scan" signal-to-noise ratio
+\ h_m (mag) 
+\ ___ H band selected "default" magnitude
+\ h_cmsig (mag) 
+\ ___ corrected H band photometric uncertainty
+\ h_msigcom (mag) 
+\ ___ combined (total) H band photometric uncertainty
+\ h_snr 
+\ ___ H band "scan" signal-to-noise ratio
+\ k_m (mag) 
+\ ___ K band selected "default" magnitude
+\ k_cmsig (mag) 
+\ ___ corrected K band photometric uncertainty
+\ k_msigcom (mag) 
+\ ___ combined (total) K band photometric uncertainty
+\ k_snr 
+\ ___ K band "scan" signal-to-noise ratio
+\ ph_qual 
+\ ___ flag indicating photometric quality of source
+\ rd_flg 
+\ ___ source of JHK "default" mags (AKA "read flag")
+\ bl_flg 
+\ ___ indicates # JHK components fit simultaneously to source
+\ cc_flg 
+\ ___ indicates JHK artifact contamination and/or confusion
+\ ndet 
+\ ___ number of >3-sig. ap. mag measurements, # possible (jjhhkk)
+\ gal_contam 
+\ ___ flag indicating if src is contaminated by extended source
+\ mp_flg 
+\ ___ src is positionally associated with an asteroid, comet, etc
+\ angle (deg) 
+\ ___ Position Angle in degree.
+\ dist (arcsec) 
+\ ___ Distance between the target position and each source in arcsec.
+\ 
+\ j_h ->  Reference:    Input column(s): j_m, h_m, k_m, rd_flg
+\ h_k ->  Reference:    Input column(s): j_m, h_m, k_m, rd_flg
+\ j_k ->  Reference:    Input column(s): j_m, h_m, k_m, rd_flg
+|         ra|       dec|err_maj|err_min|err_ang|      designation|   j_m|j_cmsig|j_msigcom|     j_snr|   h_m|h_cmsig|h_msigcom|     h_snr|   k_m|k_cmsig|k_msigcom|     k_snr|ph_qual|rd_flg|bl_flg|cc_flg|  ndet|gal_contam|mp_flg|        dist|       angle|      j_h|      h_k|      j_k|
+|     double|    double| double| double|    int|             char|double| double|   double|    double|double| double|   double|    double|double| double|   double|    double|   char|  char|  char|  char|  char|       int|   int|      double|      double|   double|   double|   double|
+|        deg|       deg| arcsec| arcsec|    deg|                 |   mag|    mag|      mag|          |   mag|    mag|      mag|          |   mag|    mag|      mag|          |       |      |      |      |      |          |      |      arcsec|         deg|         |         |         |
+|       null|      null|   null|   null|   null|             null|  null|   null|     null|      null|  null|   null|     null|      null|  null|   null|     null|      null|   null|  null|  null|  null|  null|      null|  null|        null|        null|        -|        -|        -|
+   32.404069  52.447044    0.24    0.23     100  02093697+5226493 16.282   0.091     0.092       11.5 16.097   0.185     0.185        5.8 15.800   0.206     0.206        5.2     ACC    222    111    000 160606          0      0    29.429459    56.226218    0.1850    0.2970    0.4820 
+   32.405843  52.444344    0.06    0.06      90  02093740+5226396 13.974   0.026     0.029       96.1 13.441   0.033     0.034       67.2 12.743   0.026     0.027       85.9     AAA    222    111    000 665566          0      0    29.124364    76.819476    0.5330    0.6980    1.2310 
+   32.384099  52.447769    0.06    0.06      90  02093218+5226519 14.448   0.027     0.030       62.1 14.003   0.026     0.027       40.1 13.848   0.036     0.037       31.1     AAA    222    111    000 666666          0      0    27.100615   314.424489    0.4450    0.1550    0.6000 
+   32.389803  52.449902    0.22    0.22      45  02093355+5226596 16.778   0.147     0.148        7.3 16.365    null      null       null 15.807   0.199     0.199        5.1     BUC    202    101    000 160006          0      0    27.510916   345.606174         -         -    0.9710 

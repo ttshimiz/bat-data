@@ -1,0 +1,73 @@
+\                                                                               
+\fixlen = T
+\RowsRetrieved =                 1
+\ORIGIN  = 'IPAC Infrared Science Archive (IRSA), Caltech/JPL'
+\DATETIME= '2015-01-19 23:20:32'
+\DataTag = 'ADS/IRSA.Gator#2015/0119/232032_22806'
+\DATABASE= '2MASS All-Sky Extended Source Catalog (XSC) (fp_xsc)'
+\EQUINOX = 'J2000'
+\SKYAREA = 'within 10 arcsec of  ra=253.19201 dec=-59.21862 Eq J2000 '
+\StatusFile = '/workspace/TMP_Q6R7px_10946/Gator/irsa/22806/log.22806.html'
+\SQL     = 'WHERE  (cc_flg != 'a' and cc_flg != 'z') '
+\SQL     = 'SELECT (27 column names follow in next row.)'
+\ 
+\ designation 
+\ ___ source designation formed from sexigesimal coordinates
+\ ra (deg) 
+\ ___ right ascension (J2000 decimal deg) based on peak pixel
+\ dec (deg) 
+\ ___ declination (J2000 decimal deg) based on peak pixel
+\ r_k20fe (arcsec) 
+\ ___ 20mag/sq." isophotal K fiducial ell. ap. semi-major axis
+\ j_m_k20fe (mag) 
+\ ___ J 20mag/sq." isophotal fiducial ell. ap. magnitude
+\ j_msig_k20fe (mag) 
+\ ___ J 1-sigma uncertainty in 20mag/sq." iso.fid.ell.mag
+\ j_flg_k20fe 
+\ ___ J confusion flag for 20mag/sq." iso. fid. ell. mag
+\ h_m_k20fe (mag) 
+\ ___ H 20mag/sq." isophotal fiducial ell. ap. magnitude
+\ h_msig_k20fe (mag) 
+\ ___ H 1-sigma uncertainty in 20mag/sq." iso.fid.ell.mag
+\ h_flg_k20fe 
+\ ___ H confusion flag for 20mag/sq." iso. fid. ell. mag
+\ k_m_k20fe (mag) 
+\ ___ K 20mag/sq." isophotal fiducial ell. ap. magnitude
+\ k_msig_k20fe (mag) 
+\ ___ K 1-sigma uncertainty in 20mag/sq." iso.fid.ell.mag
+\ k_flg_k20fe 
+\ ___ K confusion flag for 20mag/sq." iso. fid. ell. mag
+\ k_ba 
+\ ___ K minor/major axis ratio fit to the 3-sigma isophote
+\ k_phi (deg) 
+\ ___ K angle to 3-sigma major axis (E of N)
+\ sup_ba 
+\ ___ minor/major axis ratio fit to 3-sig. super-coadd isophote
+\ sup_phi (deg) 
+\ ___ super-coadd angle to major axis (E of N)
+\ r_ext (arcsec) 
+\ ___ extrapolation/total radius
+\ j_m_ext (mag) 
+\ ___ J mag from fit extrapolation
+\ j_msig_ext (mag) 
+\ ___ J 1-sigma uncertainty in mag from fit extrapolation
+\ h_m_ext (mag) 
+\ ___ H mag from fit extrapolation
+\ h_msig_ext (mag) 
+\ ___ H 1-sigma uncertainty in mag from fit extrapolation
+\ k_m_ext (mag) 
+\ ___ K mag from fit extrapolation
+\ k_msig_ext (mag) 
+\ ___ K 1-sigma uncertainty in mag from fit extrapolation
+\ cc_flg 
+\ ___ indicates artifact contamination and/or confusion
+\ angle (deg) 
+\ ___ Position Angle in degree.
+\ dist (arcsec) 
+\ ___ Distance between the target position and each source in arcsec.
+\ 
+|      designation|        ra|       dec|r_k20fe|j_m_k20fe|j_msig_k20fe|j_flg_k20fe|h_m_k20fe|h_msig_k20fe|h_flg_k20fe|k_m_k20fe|k_msig_k20fe|k_flg_k20fe|   k_ba|k_phi|sup_ba|sup_phi|  r_ext|j_m_ext|j_msig_ext|h_m_ext|h_msig_ext|k_m_ext|k_msig_ext|cc_flg|        dist|       angle|
+|             char|    double|    double| double|   double|      double|        int|   double|      double|        int|   double|      double|        int| double|  int|double|    int| double| double|    double| double|    double| double|    double|  char|      double|      double|
+|                 |       deg|       deg| arcsec|      mag|         mag|           |      mag|         mag|           |      mag|         mag|           |       |  deg|      |    deg| arcsec|    mag|       mag|    mag|       mag|    mag|       mag|      |      arcsec|         deg|
+|             null|      null|      null|   null|     null|        null|       null|     null|        null|       null|     null|        null|       null|   null| null|  null|   null|   null|   null|      null|   null|      null|   null|      null|  null|        null|        null|
+  16524632-5913009 253.193039 -59.216942    98.5     8.240        0.016           1     7.505        0.017           1     7.234        0.018           1     0.7    -2  0.737      -7  184.50   8.104      0.023   7.357      0.024   7.121      0.029      Z     6.331304    17.424207 
