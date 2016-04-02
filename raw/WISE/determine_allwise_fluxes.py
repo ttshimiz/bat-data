@@ -10,7 +10,7 @@ sufficiently big (30, 40, 50, or 60") for each band.
 from pylab import *
 
 #Upload AllWise fluxes
-allwise_data = genfromtxt('/Users/ttshimiz/Dropbox/Research/Thesis/Other_surveys/WISE/wise_allwise_bat_agn.tbl', delimiter = '\t', names = True, dtype = None, missing_values = 'null')
+allwise_data = genfromtxt('/Users/ttshimiz/Github/bat-data/raw/WISE/wise_allwise_bat_agn.tbl', delimiter = '\t', names = True, dtype = None, missing_values = 'null')
 names = allwise_data['Name']
 ext_flg = allwise_data['ext_flg']
 
@@ -43,7 +43,7 @@ w4gmag_err = allwise_data['w4gerr']
 w4rsemi = allwise_data['w4rsemi']
 
 #File to write out the chosen AllWise fluxes
-allwise_file = open('/Users/ttshimiz/Dropbox/Research/Thesis/Other_surveys/WISE/allwise_bat_agn_fluxes_greater_flux.txt', 'w')
+allwise_file = open('/Users/ttshimiz/Github/bat-data/raw/WISE/allwise_bat_agn_fluxes_greater_flux_v2.txt', 'w')
 
 #Arrays to store all the magnitudes and uncertainties
 w1mag = zeros(len(allwise_data))
