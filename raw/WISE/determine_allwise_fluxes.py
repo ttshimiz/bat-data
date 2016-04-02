@@ -62,9 +62,9 @@ w4extended = zeros(len(allwise_data), dtype = bool)
 for i in range(len(allwise_data)):
 
 	#WISE 1 (3.4 micron) flux
-	#if ((w1rchi2[i] > 3.0) | (w1rsemi[i] > 30.)) & isfinite(w1rsemi[i]):
+	if ((w1rchi2[i] > 3.0) | (w1rsemi[i] > 30.)) & isfinite(w1rsemi[i]):
 	#if (ext_flg[i] != 0) & isfinite(w1rsemi[i]):
-	if ((w1mpro[i] > w1gmag[i]) | (w1rsemi[i] > 30.)) & isfinite(w1rsemi[i]):
+	#if ((w1mpro[i] > w1gmag[i]) | (w1rsemi[i] > 30.)) & isfinite(w1rsemi[i]):
 		w1mag[i] = w1gmag[i]
 		w1mag_err[i] = w1gmag_err[i]
 		w1extended[i] = True
@@ -76,9 +76,9 @@ for i in range(len(allwise_data)):
 		w1extended[i] = False
 		
 	#WISE 2 (4.6 micron) flux
-	#if ((w2rchi2[i] > 3.0) | (w2rsemi[i] > 40.)) & isfinite(w2rsemi[i]):
+	if ((w2rchi2[i] > 3.0) | (w2rsemi[i] > 40.)) & isfinite(w2rsemi[i]):
 	#if (ext_flg[i] != 0) & isfinite(w1rsemi[i]):
-	if ((w2mpro[i] > w2gmag[i]) | (w1rsemi[i] > 40.)) & isfinite(w1rsemi[i]):
+#	if ((w2mpro[i] > w2gmag[i]) | (w2rsemi[i] > 40.)) & isfinite(w2rsemi[i]):
 		w2mag[i] = w2gmag[i]
 		w2mag_err[i] = w2gmag_err[i]
 		w2extended[i] = True
@@ -90,9 +90,9 @@ for i in range(len(allwise_data)):
 		w2extended[i] = False
 		
 	#WISE 3 (12 micron) flux
-	#if ((w3rchi2[i] > 3.0) | (w3rsemi[i] > 50.)) & isfinite(w3rsemi[i]):
+	if ((w3rchi2[i] > 3.0) | (w3rsemi[i] > 50.)) & isfinite(w3rsemi[i]):
 	#if (ext_flg[i] != 0) & isfinite(w1rsemi[i]):
-	if ((w3mpro[i] > w3gmag[i]) | (w3rsemi[i] > 50.)) & isfinite(w1rsemi[i]):
+	#if ((w3mpro[i] > w3gmag[i]) | (w3rsemi[i] > 50.)) & isfinite(w3rsemi[i]):
 		w3mag[i] = w3gmag[i]
 		w3mag_err[i] = w3gmag_err[i]
 		w3extended[i] = True
@@ -104,9 +104,9 @@ for i in range(len(allwise_data)):
 		w3extended[i] = False
 		
 	#WISE 4 (22 micron) flux
-	#if ((w4rchi2[i] > 3.0) | (w4rsemi[i] > 60.)) & isfinite(w4rsemi[i]):
+	if ((w4rchi2[i] > 3.0) | (w4rsemi[i] > 60.)) & isfinite(w4rsemi[i]):
 	#if (ext_flg[i] != 0) & isfinite(w1rsemi[i]):
-	if ((w4mpro[i] > w4gmag[i]) | (w4rsemi[i] > 60.)) & isfinite(w1rsemi[i]):
+	#if ((w4mpro[i] > w4gmag[i]) | (w4rsemi[i] > 60.)) & isfinite(w4rsemi[i]):
 		w4mag[i] = w4gmag[i]
 		w4mag_err[i] = w4gmag_err[i]
 		w4extended[i] = True
